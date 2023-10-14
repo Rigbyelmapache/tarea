@@ -1,0 +1,490 @@
+/* Seccion Hero */
+
+ .personal {
+max-width: 100%;
+width: 70%;
+
+  
+}
+.color {
+  
+  background-image: linear-gradient(to bottom, #d6a02c, #e74c3c);
+  background-size: cover;
+  
+}
+
+
+.nav-header {
+  width: 120px;
+  position: relative;
+  list-style: none;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  
+  
+}
+.nav-header:hover {
+  background-color: rgb(240, 144, 49);
+  transform: scale(1.1);
+  width: 140px;
+  padding: 0.5px;
+ 
+
+   
+}
+.nav-header:hover i{
+  transform: scale(0);
+  font-size: 1.75em;
+  transition-delay: 0.25s;
+
+}
+ .nav-header span{
+  position: absolute;
+}
+ 
+ .nav-header:hover .titulo{
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+
+.navbar {
+    padding: 1.5rem ;
+    background-color: #fafafa;
+    position: sticky;
+    top: 0; /* Comienza a pegarse en la parte superior de la ventana */
+    z-index: 2;
+  }
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.sobre-mi {
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .sobre-mi .contenedor {
+    max-width: 700px;
+    text-align: center;
+  
+  }
+  
+  /* generales */ 
+  .seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+  }
+  
+  .seccion-clara {
+    color: black;
+    background-color: white;
+  }
+  
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .seccion-descripcion {
+    font-size: 1rem;
+    color: #584e4e;
+  }
+  
+  .seccion-texto {
+    font-size: 1.2rem;
+  }
+  
+  .btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+  
+  .texto-negro {
+    color: black;
+  }
+  
+  .texto-blanco {
+    color: white;
+  }
+  /* proyectos */
+  .proyectos-recientes {
+    padding: 40px;
+  }
+  
+  .proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+  }
+  
+  .proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .proyecto {
+    position: relative;
+  }
+  
+  .proyecto:hover img {
+    opacity: 0.2;
+  }
+  
+  .proyecto:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay .iconos-contenedor {
+    display: flex;
+  }
+  
+  .overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+  }
+  
+  /*  trabajadores */ 
+  .experiencia {
+    padding: 40px 40px 60px 40px;
+    align-items: center;
+  }
+  
+  .experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.8s ease-in;
+    border-radius: 50px;
+   
+  }
+  
+  .experiencia .columna:hover {
+    color: white;
+    background-color: #292925;
+  }
+  
+  .experiencia i {
+    font-size: 2.5rem;
+    color: #084080;
+    background-color: #ffffff;
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .badge  {
+    margin: 5px;
+    
+  }
+  .custom-badge{
+    background-color: #013661; /* Cambia el color de fondo a tu elección */
+    color: #fff; /* Cambia el color del texto a tu elección */
+    font-size: 1rem; /* Otras propiedades de estilo personalizado si es necesario */
+  }
+ 
+
+
+  /* parte inferior */
+  .container2 {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap:  wrap;
+    padding: 30px;
+
+  }
+  .container2 .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: rgb(218, 219, 221);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0,5);
+    transform: 0.3s ease-in-out;
+   
+  }
+
+  .container2 .card:hover {
+
+    height: 420px;
+  }
+  .container2 .card .imgbx {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0,5);
+  }
+  .container2 .card .imgbx img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-left: 0px;
+  }
+  .container2 .card .content {
+    position: relative;
+    margin-top: -110px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+
+  }
+  .container2 .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay:0.3s ;
+  }
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(105, 108, 112);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+  /* footer */
+  .footer{
+    background-color: #1b1b32;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+  }
+   .footer-item{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    top: 0px;
+    
+  }
+  .footer-item .nav-footer{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+ .footer-item  .nav-footer:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+ .footer-item .nav-footer::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+   .nav-footer:hover::before{
+    opacity: 1;
+  }
+   .footer-item .nav-footer::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+   .footer-item li:hover::after{
+    opacity: 0.5;
+  }
+   .nav-footer i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+   .footer-item li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+   .footer-item li span{
+    position: absolute;
+  }
+   .footer-item li .titulo{
+    color: #000000;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+   .footer-item li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 18px;
+    }
+  
+    .overlay i {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width:700px){
+     .contenedor h2 {
+      font-size: 20px;
+    }
+     .contenedor p {
+      font-size: 10px;
+    }
+     .contenedor {
+        background: hover;
+       }
+       .sobre-mi {
+        height: 250px;
+        padding: 10px;
+      }
+     
+  }
+  
+ 
+ 
+/* Estilos para pantallas más grandes o iguales a 700px */
+ @media screen and (min-width:700px){
+  .contenedor h2 {
+   font-size: 40px;
+ }
+  .contenedor p {
+   font-size: 21px;
+ }
+  .contenedor {
+     background: hover;
+    }
+    .sobre-mi {
+      height: 450px;
+      padding: 20px;
+    }
+   
+}
+ 
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
